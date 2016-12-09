@@ -1,0 +1,26 @@
+{
+  "name": "podcast-chapter-parser-mp4chaps",
+  "version": "1.0.0",
+  "description": "Parse mp4chaps podcast chapter format into JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eteubert/podcast-chapter-parser-mp4chaps.git"
+  },
+  "keywords": [
+    "parser"
+  ],
+  "author": "ericteubert <eric@ericteubert.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eteubert/podcast-chapter-parser-mp4chaps/issues"
+  },
+  "homepage": "https://github.com/eteubert/podcast-chapter-parser-mp4chaps#readme",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "normalplaytime": "^1.0.2"
+  }
+}
