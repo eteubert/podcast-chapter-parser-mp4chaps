@@ -37,5 +37,9 @@ describe('MP4Chaps', function() {
       assert.deepEqual([], MP4Chaps.parse("1.2.3.4.5 Intro"));
     });
 
+    it('should keep intro at 0 milliseconds', function() {
+      assert.deepEqual([{ start: 0, title: "Intro" }], MP4Chaps.parse("00:00:00.000 Intro"));
+    });
+
   });
 });
