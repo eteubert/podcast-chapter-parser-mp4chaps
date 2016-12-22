@@ -1,6 +1,6 @@
 {
   "name": "podcast-chapter-parser-mp4chaps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse mp4chaps podcast chapter format into JSON",
   "main": "index.js",
   "scripts": {
