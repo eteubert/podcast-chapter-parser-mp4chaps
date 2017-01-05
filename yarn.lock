@@ -166,9 +166,9 @@ ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
 
-normalplaytime@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/normalplaytime/-/normalplaytime-1.0.3.tgz#72216de9901586e62b1d3fd5e4cb3321c3f2d7c6"
+normalplaytime@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/normalplaytime/-/normalplaytime-1.0.4.tgz#eb6df5f3a9030cfe8064d36f565f9268d9a70dde"
 
 once@^1.3.0:
   version "1.4.0"
