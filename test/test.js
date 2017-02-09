@@ -41,5 +41,12 @@ describe('MP4Chaps', function() {
       assert.deepEqual([{ start: 0, title: "Intro" }], MP4Chaps.parse("00:00:00.000 Intro"));
     });
 
+    it('should extract the URL', function() {
+      assert.deepEqual(
+        [{ start: 0, title: "Intro", url: "http://www.example.com" }],
+        MP4Chaps.parse("00:00:00.000 Intro <http://www.example.com>")
+      );
+    });
+
   });
 });

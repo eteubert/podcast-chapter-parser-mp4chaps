@@ -10,12 +10,34 @@ var parse = function(text) {
 
         if (matches) {
             var time = npt.parse(matches[1]);
+            var title = matches[2].trim();
+            var linkMatch = title.match(/<([^>]+)>/);
+            var link;
+
+            if (linkMatch) {
+                link = linkMatch[1];
+                
+                var linkStart = title.indexOf('<');
+                var linkEnd = title.indexOf('>');
+                
+                var beforeLink = title.substr(0, linkStart).trim();
+                var afterLink  = title.substr(linkEnd + 1).trim();
+
+                // build new title without link
+                title = (beforeLink + ' ' + afterLink).trim();
+            }
 
             if (time !== null) {
-                all.push({
-                    title: matches[2].trim(),
+                var chapter = {
+                    title: title,
                     start: time
-                });
+                };
+
+                if (link) {
+                    chapter.url = link;
+                }
+
+                all.push(chapter);
             }
         }
 

@@ -13,11 +13,11 @@ npm install podcast-chapter-parser-mp4chaps
 ```js
 var MP4Chaps = require('podcast-chapter-parser-mp4chaps');
 
-var chapters = MP4Chaps.parse("1.2 Intro\n20 Say Hello");
+var chapters = MP4Chaps.parse("1.2 Intro\n20 Say Hello <http://www.example.com>");
 // =>
 // [
 //     { start: 1200, title: "Intro" },
-//     { start: 2000, title: "Say Hello" }
+//     { start: 2000, title: "Say Hello", url: "http://www.example.com" }
 // ]
 ```
 
