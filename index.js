@@ -34,7 +34,7 @@ var parse = function(text) {
                 };
 
                 if (link) {
-                    chapter.url = link;
+                    chapter.href = link;
                 }
 
                 all.push(chapter);

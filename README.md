@@ -17,7 +17,7 @@ var chapters = MP4Chaps.parse("1.2 Intro\n20 Say Hello <http://www.example.com>"
 // =>
 // [
 //     { start: 1200, title: "Intro" },
-//     { start: 2000, title: "Say Hello", url: "http://www.example.com" }
+//     { start: 2000, title: "Say Hello", href: "http://www.example.com" }
 // ]
 ```
 
